@@ -7,6 +7,7 @@ import manifest from './manifest.json';
 
 // https://vite.dev/config/
 export default defineConfig({
+  server: { host: '0.0.0.0', allowedHosts: ['app.matchflow.orb.local']},
   plugins: [
     react(),
     VitePWA({
